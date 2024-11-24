@@ -1,0 +1,757 @@
+<html class=""><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://jbenedict.work/medea/assets/js/scrollreveal.js"></script>
+<link rel="stylesheet" media="screen" href="https://jbenedict.work/medea/assets/css/">
+<link rel="stylesheet" media="screen" href="https://jbenedict.work/medea/assets/css/">
+	<script type="text/javascript">
+ <!--
+  if (screen.width <= 950) {
+  window.location = "https://jbenedict.work/medea/mobile";
+  }
+ //-->
+</script>
+
+<body oncontextmenu="return false">
+	
+	
+	
+	
+<style>
+
+
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://jbenedict.work/assets/font/Poppins.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Comfortaa';
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://jbenedict.work/assets/font/Comfortaa.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://jbenedict.work/assets/font/SourceCodePro.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Sofia Pro Black';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://jbenedict.work/assets/font/SofiaProBlack.woff) format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+html {
+	background-color:  #010409;
+}
+bold {
+	color: #a30b00;
+}
+@media only screen and (max-device-width: 650px) {
+	.desktopheader {
+		visibility: hidden;
+	}
+	.desktopbuttons {
+		visibility: hidden;
+	}
+}
+@media only screen and (min-device-width: 651px) {
+	.mobileheader {
+		visibility: hidden;
+	}
+	.mobilebuttons {
+		visibility: hidden;
+	}
+}
+.header {
+	z-index: 2;
+	width: 90%;
+	left: 5%;
+	position: fixed;
+	top: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: flex;
+	border: rgba(255, 255, 255, .1) 1px solid;
+	border-radius: 15px;
+	background-color: rgba(38, 38, 38, .8);
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+	.header {
+		background: 0 0;
+		-webkit-backdrop-filter: blur(7px);
+		backdrop-filter: blur(7px);
+	}
+}
+.logo-container {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.logo {
+	animation-name: logo-animation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+	transform: scale(1);
+	transition: all .2s linear;
+}
+.logo:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, .35));
+}
+.logo:active {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, .2));
+}
+@keyframes logo-animation {
+	0% {
+		transform: rotate(3deg);
+	}
+	50% {
+		transform: rotate(-3deg);
+	}
+	100% {
+		transform: rotate(3deg);
+	}
+}
+.navbar-icon {
+	position: absolute;
+	transform: scale(1);
+	transition: all .2s linear;
+	font-family: Comfortaa;
+	font-size: 40px;
+	cursor: pointer;
+}
+.navbar-iconbutton {
+	color: #ffffff;
+}
+.navbar-icon:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, .35));
+	transform: scale(1.075) rotate(1deg);
+}
+.navbar-icon:active {
+	transform: scale(.95);
+}	
+.navbar-nav {
+	font-family: Sofia Pro Black;
+	font-size: 20px;
+	padding: 15px;
+	padding-left: 1%;
+	padding-right: 1%;
+	transition: all .1s linear;
+}
+.navbar-button {
+	color: #969696;
+	text-decoration: none;
+}
+.navbar-nav:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, .35));
+	transform: scale(1.075) rotate(1deg);
+}
+.navbar-nav:active {
+	transform: scale(.95);
+}
+.dropdown-container {
+	position: absolute;
+	margin: auto;
+	width: 100%;
+}
+.dropdown-content {
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 100;
+	transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
+	position: absolute;
+	width: 100%;
+	height: 1000px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(0, 0, 0, .8);
+	text-align: center;
+}
+.dropdown-text {
+	font-family: Sofia Pro Black;
+	font-size: min(max(25px, 7vw), 55px);
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: #ffffff;
+	text-decoration: none;
+	transition: all .1s linear;
+}
+.dropdown-text:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, .35));
+	transform: scale(1.05);
+}
+.dropdown-text:active {
+	transform: scale(.95);
+}
+.dropdown-space {
+	height: min(max(50px, 20vh), 200px);
+}
+.show {
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0s;
+}
+.footer {
+	z-index: 2;
+	width: 100%;
+	height: 70px;
+	position: relative;
+	display: table;
+	bottom: 0;
+	right: 0;
+	color: #969696;
+	font-family: Sofia Pro Black;
+	font-size: 15px;
+	border-top: rgba(255, 255, 255, .1) 1px solid;
+	background-color: #1e1e1e;
+}
+.footer-nav {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: all .1s linear;
+}
+.footer-nav:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, .35));
+	transform: scale(1.075) rotate(1deg);
+}
+.footer-nav:active {
+	transform: scale(.95);
+}
+.links {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	padding-top: 10px;
+}
+.madeby {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	padding-bottom: 10px;
+}
+body {
+	opacity: 0;
+	animation: 0.5s ease-out 0.5s 1 reveal forwards;
+}
+@keyframes reveal {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes unReveal {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+	
+	
+	
+	
+	
+</style>
+
+
+
+
+<style>
+
+
+
+@font-face {
+	font-family: 'azonix';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://jbenedict.work/medea/assets/font/azonix.woff) format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'valorax';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://jbenedict.work/medea/assets/font/valorax.woff) format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'limelight';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://jbenedict.work/medea/assets/font/limelight.woff) format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'recursive';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://jbenedict.work/medea/assets/font/recursive.woff) format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Sofia Pro Black';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://jbenedict.work/assets/font/SofiaProBlack.woff) format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+	
+	
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.titleimage {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/medea.png");
+  min-height: 100%;
+}
+
+.endimage {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/chorus1.png");
+  background-position: bottom;
+  min-height: 700px;
+}	
+
+.chorus1 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/chorus1.png");
+  background-position: bottom;
+  min-height: 700px;
+}
+
+.chorus2 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/chorus2.png");
+  background-position: bottom;
+  min-height: 600px;
+}
+.chorus3 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/chorus3.png");
+  background-position: bottom;
+  min-height: 600px;
+}
+
+.costumes1 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/costumes1.png");
+  background-position: bottom;
+  min-height: 700px;
+}
+
+.costumes2-1 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/costumes2-1.png");
+  background-size: 120%;
+  background-position: bottom;
+  min-height: 750px;
+}
+.costumes2-2 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/costumes2-2.png");
+  background-position: bottom;
+  min-height: 750px;
+}
+
+.stage1 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/stage1.png");
+  background-position: bottom;
+  min-height: 700px;
+}
+
+.stage2 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/stage2.png");
+  background-position: bottom;
+  min-height: 600px;
+}
+.stage3 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/stage3.png");
+  background-position: bottom;
+  min-height: 600px;
+}
+
+.masks1 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/masks1.png");
+  min-height: 700px;
+}
+
+.masks2 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/masks2.png");
+  background-position: bottom;
+  min-height: 700px;
+}
+.masks3 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/medea/assets/img/masks3.png");
+  background-position: bottom;
+  min-height: 700px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-family: azonix;
+}
+
+.caption span.border {
+  background-color:rgba(0, 0, 0, 0.7);
+  color: aqua;
+  padding: 20px;
+  padding-top: 25px;
+  font-size: 35px;
+  letter-spacing: 10px;
+  border-radius: 50px;
+  border: 5px solid black;
+}
+
+.body {
+  font-family: recursive;
+  background-color:#282E34;
+  text-align:center;
+  padding:50px 80px;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: justify;
+}
+
+.heading {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+   text-align:center;
+}
+	
+	
+	
+	
+	
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  25%  { opacity:0.45; }
+  37%  { opacity:0.63; }
+  42%  { opacity:1; }
+  50%  { opacity:0; }
+  65%  { opacity:1; }
+  76%  { opacity:0.33; }
+  92%  { opacity:0.62; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  25%  { opacity:0.45; }
+  37%  { opacity:0.63; }
+  42%  { opacity:1; }
+  50%  { opacity:0; }
+  65%  { opacity:1; }
+  76%  { opacity:0.33; }
+  92%  { opacity:0.62; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  25%  { opacity:0.45; }
+  37%  { opacity:0.63; }
+  42%  { opacity:1; }
+  50%  { opacity:0; }
+  65%  { opacity:1; }
+  76%  { opacity:0.33; }
+  92%  { opacity:0.62; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  25%  { opacity:0.45; }
+  37%  { opacity:0.63; }
+  42%  { opacity:1; }
+  50%  { opacity:0; }
+  65%  { opacity:1; }
+  76%  { opacity:0.33; }
+  92%  { opacity:0.62; }
+  100% { opacity:1; }
+}
+.animate-flicker1 {
+   -webkit-animation: flickerAnimation 1s infinite;
+   -moz-animation: flickerAnimation 1s infinite;
+   -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+}
+
+
+
+
+</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<div class="titleimage">
+  <div class="caption">
+	  <span class="border">MEDEA: A PLAY IN <span class="animate-flicker1">CYBER</span>PUNK</span>
+  </div>
+</div>
+
+<div class="body" style="color: #eee; background-color:#282E34;">
+  <div class="heading" style="color: #fff;">By James Benedict</div>
+  	<div class="reveal"><br>The play I have chosen for this production concept is Medea by Euripedes, first performed in 431 BCE. Medea is a powerful tragedy that explores themes of love, betrayal, and revenge. The play revolves around Medea, a sorceress who after having her husband Jason betray her began on a path of revenge and destruction. The play’s themes are still relevant in today’s society, and most likely will be relevant in a future society like where I set my play.</div>
+    <br>
+    <div class="reveal">In my concept, Medea will be reimagined into a dark cyberpunk dystopian future city filled with technology, broken society, and corporate monopoly. The dark and neon world where control versus rebellion would not be uncommon reflects Medea’s situation in the story, with her fight against those in power.</div>
+    <br>
+    <div class="reveal">In my version, the play is set in a dark, gritty, grungy broken future dystopian city that Medea is a part of. She is fighting against a corrupt system of those trying to gain power that have wronged her. She will be surrounded by those who have accepted the society they live in, and encourage her to as well. All the design elements will help to push the idea that society is divided between the wealthy versus the rest of society, and show that the world has been run down by those in power.</div>
+  <br>
+</div>
+
+	
+<div class="chorus1">
+  <div class="caption">
+  <span class="border">THE GR<span class="animate-flicker1">EEK</span> CHORUS</span>
+  </div>
+</div>
+
+<div class="body" style="color: #eee; background-color:#393f5f;">
+  <div class="reveal"><br><br>
+	In Ancient Greek Theatre, there was a group of performers in a lot of plays called the chorus. They would sing and move together to comment on the story, and would share the feelings and opinions of society at that time. The chorus helped to influence the audience’s understanding of the play and provided more information on the characters.  
+	<br><br><br></div>
+</div>
+
+<div class="chorus2"></div>
+
+<div class="body" style="color: #eee; background-color:#6a7e6a;">
+  <div class="reveal"><div class="heading" style="color: #fff;">My Greek Chorus</div>
+  <br>
+	In my version of Medea, the chorus will be portrayed as a group of people living on the streets. They would be wearing ratty clothing and not look super wealthy, but would still have elements of futurism about them. They would represent the larger part of society who are living under these powerful people.
+  <br></div>
+</div>
+
+<div class="chorus3"></div>
+
+<div class="body" style="color: #eee; background-color:#63345e;">
+  <div class="reveal"><br><br>
+	By portraying the chorus as a bunch of people living on the streets, they would help to contrast the look of the main characters, who have more than most of society does and give an insight into the state of the world at that time. The world has corrupt people who are trying to maintain control, through marriages for example, like Jason. 
+  <br><br><br></div>
+</div>
+
+
+<div class="costumes1">
+  <div class="caption">
+  <span class="border">GREEK <span class="animate-flicker1">COST</span>UMES</span>
+  </div>
+</div>
+
+<div class="body" style="color: #eee; background-color:#8d8980;">
+  <div class="reveal"><br><br>
+	In Ancient Greek Theatre, costumes were especially important since most roles were played by men. Costumes helped to determine the characters gender or social statuses. Costumes were also very elaborate in order to hide the identity of the person playing them. Greek costumes also differed greatly from clothing worn in everyday life, featuring things like bright colors and patterns.  
+	<br><br><br></div>
+</div>
+
+<div class="costumes2-1"></div>
+<div class="costumes2-2"></div>
+
+<div class="body" style="color: #eee; background-color:#005678;">
+  <div class="reveal"><div class="heading" style="color: #fff;">My Costumes</div>
+  <br>
+	In my adaptation of Medea, the chorus would be wearing broken, ratty clothing to represent the lower class of society. Their clothes would be in dark colors like brown and black. They might also feature small pieces of technology that look cobbled together, that they might have made out of scraps. The main characters would be wearing bright patterned and flowy clothing to contrast the chorus and to clearly show the division of social class and their wealth. They might have or wear cleaner newer pieces of futuristic tech, like armbands, goggles, or other wearable tech of the sort. Medea would also feature more higher-class clothing, but also aspects of the chorus, to show that she is split between worlds, or between classes. She will look like a vigilante, giving the audience context that she is a fighter.
+  </div>
+  <div class="reveal"><br>
+	By dressing the cast this way, it would help to clearly show the divisions of social classes and give the audience some context for how society is organized in the future time that it would be set in. The chorus’ clothing would show that they are putting together whatever they can find and may not fit as well or correctly since they may not have as much money. In contrast, the main characters' clothing would look more custom tailored for them and would be new and clean. 
+  <br></div>
+</div>
+
+
+<div class="stage1">
+  <div class="caption">
+  <span class="border">GREEK STAGE DE<span class="animate-flicker1">SIGN</span></span>
+  </div>
+</div>
+
+<div class="body" style="color: #eee; background-color:#5c0202;">
+  <div class="reveal"><br><br>
+	In Ancient Greek Theatre, simple stage designs were used and performed in open-air amphitheaters. The focus was usually on the actors and the story as opposed to on the elaborate sets and effects. The simplicity allowed the audience to concentrate on what was being said and the action being done.  
+	<br><br><br></div>
+</div>
+
+<div class="stage2"></div>
+
+<div class="body" style="color: #eee; background-color:#29132e;">
+  <div class="reveal"><div class="heading" style="color: #fff;">My Stage Design</div>
+  <br>
+	In my version of Medea, the stage would be wide open with lots of space to move around, similar to in Greek Theatres. The stage would have rubble scattered around and trash littered on the ground. The sides of the stage would have run down building-like structures that show the state of the world at the time. There would also be some futuristic neon signs that might flicker a little, all contributing to the run-down nature of most of the world. The backdrop would show more flashy buildings in the distance, showing the division between most of society and the wealthy.
+  <br></div>
+</div>
+
+<div class="stage3"></div>
+
+<div class="body" style="color: #eee; background-color:#44786a;">
+  <div class="reveal"><br><br>
+	By making the set this way, it further helps to reinforce the division of society that all the other parts of this play concept pushes. Medea’s more wealthy looking attire would contrast very well with the run down nature of the place she is currently in, showing her isolation from where she once was and showing that she is fighting against the more powerful people of society. 
+  <br><br><br></div>
+</div>
+
+
+<div class="masks1">
+  <div class="caption">
+  <span class="border">GREEK M<span class="animate-flicker1">ASK</span>S</span>
+  </div>
+</div>
+
+<div class="body" style="color: #eee; background-color:#351409;">
+  <div class="reveal"><br><br>
+	In Ancient Greek Theatre, masks were very often used in most performances. Masks allowed actors to portray many different characters and help to make it clear to the audience that they might have been expressing a certain emotion. Big Greek Theaters made it difficult for all audience members to understand the action on stage, but masks allowed emotions and expressions to be over-dramatized so that people sitting far away could easily see and understand the way each character was being portrayed.  
+	<br><br><br></div>
+</div>
+
+<div class="masks2"></div>
+
+<div class="body" style="color: #eee; background-color:#014708;">
+  <div class="reveal"><div class="heading" style="color: #fff;">My Masks</div>
+  <br>
+	In my production, masks would be used on the chorus in a few different forms. Some would have daft-punk style LED masks that could show different emotions, while others would have more basic masks like gas masks or goggles. In contrast, the main more wealthy characters would wear simpler things, like high-tech fancy glasses, or slim goggles.
+  <br></div>
+</div>
+
+<div class="masks3"></div>
+
+<div class="body" style="color: #eee; background-color:#003062;">
+  <div class="reveal"><br><br>
+	These masks would all help to tie together the message of the state of society at the time, like all the other parts of this play’s design. The chorus’ masks would show futuristic technology while also giving some context to maybe the air quality of the place they live, since some of them wear gas masks. The contrast of the wealthy’s glasses, high tech gear, and lack of things like gas masks would show their wealth and how they might not be as much a victim to poor air quality and bad living conditions. 
+  <br><br><br></div>
+</div>
+
+
+<div class="titleimage">
+  <div class="caption">
+  <span class="border">MADE BY <span class="animate-flicker1">JAM</span>ES</span>
+  </div>
+</div>
+	
+
+<div class="body" style="color: #eee; background-color:#282E34;">
+  <div class="reveal"><div class="heading" style="color: #fff;">Disclaimer</div>
+    <br>
+	ChatGPT AI Model GPT-4o was used to generate most of the images on this page using DALL-E 3. This page was coded from scratch by me.
+  <br></div>
+</div>
+	
+
+	<div class="footer">
+		<div class="links">
+			<a href="https://github.com/jbenedi" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/github.png" alt="Github Pic" style="width: 30px; padding-top: 3px;"></a>
+			<a href="https://www.instagram.com/jbenedictwork/" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/instagram.png" alt="Instagram Pic" style="width: 35px;"></a>
+			<a href="https://www.linkedin.com/in/james-benedict-theatre" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/linkedin.png" alt="Linkedin Pic" style="width: 35px;"></a>
+		</div>
+		<div class="madeby"> James Benedict • <div style="padding-right: 4px;"></div> <span id="year"></span> </div>
+	</div>
+	
+
+<script>
+		ScrollReveal().reveal('.reveal', { delay: 200, duration: 2000, reset: true })
+</script>
+<script src="https://jbenedict.work/assets/js/main.js" type="text/javascript"></script>
