@@ -516,33 +516,64 @@ body, html {
 	
 	
 	
-@keyframes signAnimation {
+@keyframes signAnimationL{
   0% {transform: rotate(97deg);}
   50% {transform: rotate(83deg);}
   100% {transform: rotate(97deg);}
 }
-@-o-keyframes signAnimation{
+@-o-keyframes signAnimationL{
+  0% {transform: rotate(97deg);}
+  50% {transform: rotate(83deg);}
+  100% {transform: rotate(97deg);}
+}
+@-moz-keyframes signAnimationL{
+  0% {transform: rotate(97deg);}
+  50% {transform: rotate(83deg);}
+  100% {transform: rotate(97deg);}
+}
+@-webkit-keyframes signAnimationL{
   0% {transform: rotate(3deg);}
   50% {transform: rotate(-3deg);}
   100% {transform: rotate(3deg);}
 }
-@-moz-keyframes signAnimation{
-  0% {transform: rotate(3deg);}
-  50% {transform: rotate(-3deg);}
-  100% {transform: rotate(3deg);}
-}
-@-webkit-keyframes signAnimation{
-  0% {transform: rotate(3deg);}
-  50% {transform: rotate(-3deg);}
-  100% {transform: rotate(3deg);}
-}
-.animate-sign1 {
+
+.animate-signL {
 	display: inline-block;
 	transform-origin: left center;
-   -webkit-animation: signAnimation 3s infinite;
-   -moz-animation: signAnimation 3s infinite;
-   -o-animation: signAnimation 3s infinite;
-    animation: signAnimation 3s infinite;
+   -webkit-animation: signAnimationL 3s infinite;
+   -moz-animation: signAnimationL 3s infinite;
+   -o-animation: signAnimationL 3s infinite;
+    animation: signAnimationL 3s infinite;
+}
+
+
+@keyframes signAnimationR {
+  0% {transform: rotate(-97deg);}
+  50% {transform: rotate(-83deg);}
+  100% {transform: rotate(-97deg);}
+}
+@-o-keyframes signAnimationR{
+  0% {transform: rotate(-97deg);}
+  50% {transform: rotate(-83deg);}
+  100% {transform: rotate(-97deg);}
+}
+@-moz-keyframes signAnimationR{
+  0% {transform: rotate(-97deg);}
+  50% {transform: rotate(-83deg);}
+  100% {transform: rotate(-97deg);}
+}
+@-webkit-keyframes signAnimationR{
+  0% {transform: rotate(-97deg);}
+  50% {transform: rotate(-83deg);}
+  100% {transform: rotate(-97deg);}
+}
+.animate-signR {
+	display: inline-block;
+	transform-origin: right center;
+   -webkit-animation: signAnimationR 3s infinite;
+   -moz-animation: signAnimationR 3s infinite;
+   -o-animation: signAnimationR 3s infinite;
+    animation: signAnimationR 3s infinite;
 }
 
 
@@ -565,7 +596,7 @@ body, html {
 
 <div class="titleimage">
   <div class="caption">
-	  <span class="border">TARTUFFE: A PLAY IN THE PACIFIC NORTH <span class="animate-sign1">WEST</span></span>
+	  <span class="border">TARTUFFE: A PLAY IN THE PACIFIC NORTH <span class="animate-signL">WEST</span></span>
   </div>
 </div>
 
@@ -582,7 +613,7 @@ body, html {
 	
 <div class="chorus1">
   <div class="caption">
-  <span class="border">THE GR<span class="animate-flicker1">EEK</span> CHORUS</span>
+	  <span class="border">RELIGIOUS <span class="animate-signR">HYP</span> OCRISY IN THE 17TH CENTURY</span>
   </div>
 </div>
 
