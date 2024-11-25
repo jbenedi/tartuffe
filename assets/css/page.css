@@ -1,1 +1,309 @@
+@font-face {
+	font-family: 'pacificnorthwest';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://jbenedict.work/tartuffe/assets/font/pacificnorthwest.woff) format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
+@font-face {
+	font-family: 'limelight';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://jbenedict.work/medea/assets/font/limelight.woff) format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'recursive';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://jbenedict.work/medea/assets/font/recursive.woff) format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Sofia Pro Black';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://jbenedict.work/assets/font/SofiaProBlack.woff) format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+	
+	
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.titleimage {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/tartuffe.png");
+  min-height: 100%;
+}
+
+.endimage {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/flyover.png");
+  min-height: 700px;
+}	
+
+.hypocrisy1 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/hypocrisy1.png");
+  background-position: top;
+  min-height: 700px;
+}
+
+.hypocrisy2 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/hypocrisy2.png");
+  background-position: bottom;
+  min-height: 600px;
+}
+.hypocrisy3 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/hypocrisy3.png");
+  background-position: bottom;
+  min-height: 600px;
+}
+
+.comedy1 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/comedy1.png");
+  background-position: bottom;
+  min-height: 700px;
+}
+
+.comedy2 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/comedy2.png");
+  background-size: 120%;
+  background-position: top;
+  min-height: 750px;
+}
+.comedy3 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/comedy3.png");
+  background-position: bottom;
+  min-height: 750px;
+}
+
+.stage1 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/stage1.png");
+  background-position: bottom;
+  min-height: 700px;
+}
+
+.stage2 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/stage2.png");
+  background-position: bottom;
+  min-height: 600px;
+}
+.stage3 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/stage3.png");
+  background-position: bottom;
+  min-height: 600px;
+}
+
+.costumes1 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/costumes1.png");
+  background-position: top;
+  min-height: 700px;
+}
+
+.costumes2 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/costumes2.png");
+  background-position: top;
+  min-height: 700px;
+}
+.costumes3 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://jbenedict.work/tartuffe/assets/img/costumes3.png");
+  background-position: bottom;
+  min-height: 700px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-family: pacificnorthwest;
+}
+
+.caption span.border {
+  background-color:rgba(0, 0, 0, 0.7);
+  color: #ef762e;
+  padding: 20px;
+  padding-top: 25px;
+  font-size: 40px;
+  font-weight: 1000;
+  letter-spacing: 7px;
+  border-radius: 5px;
+  border: 5px solid #598e82;
+}
+
+.body {
+  font-family: recursive;
+  background-color:#282E34;
+  text-align:center;
+  padding:50px 80px;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: justify;
+}
+
+.heading {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+   text-align:center;
+}
+	
+	
+	
+	
+	
+@keyframes signAnimationL{
+  0% {transform: rotate(97deg);}
+  50% {transform: rotate(83deg);}
+  100% {transform: rotate(97deg);}
+}
+@-o-keyframes signAnimationL{
+  0% {transform: rotate(97deg);}
+  50% {transform: rotate(83deg);}
+  100% {transform: rotate(97deg);}
+}
+@-moz-keyframes signAnimationL{
+  0% {transform: rotate(97deg);}
+  50% {transform: rotate(83deg);}
+  100% {transform: rotate(97deg);}
+}
+@-webkit-keyframes signAnimationL{
+  0% {transform: rotate(3deg);}
+  50% {transform: rotate(-3deg);}
+  100% {transform: rotate(3deg);}
+}
+
+.animate-signL {
+	display: inline-block;
+	transform-origin: left center;
+   -webkit-animation: signAnimationL 3s infinite;
+   -moz-animation: signAnimationL 3s infinite;
+   -o-animation: signAnimationL 3s infinite;
+    animation: signAnimationL 3s infinite;
+}
+
+
+@keyframes signAnimationR {
+  0% {transform: rotate(-97deg);}
+  50% {transform: rotate(-83deg);}
+  100% {transform: rotate(-97deg);}
+}
+@-o-keyframes signAnimationR{
+  0% {transform: rotate(-97deg);}
+  50% {transform: rotate(-83deg);}
+  100% {transform: rotate(-97deg);}
+}
+@-moz-keyframes signAnimationR{
+  0% {transform: rotate(-97deg);}
+  50% {transform: rotate(-83deg);}
+  100% {transform: rotate(-97deg);}
+}
+@-webkit-keyframes signAnimationR{
+  0% {transform: rotate(-97deg);}
+  50% {transform: rotate(-83deg);}
+  100% {transform: rotate(-97deg);}
+}
+.animate-signR {
+	display: inline-block;
+	transform-origin: right center;
+   -webkit-animation: signAnimationR 3s infinite;
+   -moz-animation: signAnimationR 3s infinite;
+   -o-animation: signAnimationR 3s infinite;
+    animation: signAnimationR 3s infinite;
+}
