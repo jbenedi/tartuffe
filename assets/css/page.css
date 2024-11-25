@@ -270,8 +270,8 @@ body, html {
 }
 
 .animate-signL {
-	display: inline-block;
-	transform-origin: left center;
+   display: inline-block;
+   transform-origin: left center;
    -webkit-animation: signAnimationL 3s infinite;
    -moz-animation: signAnimationL 3s infinite;
    -o-animation: signAnimationL 3s infinite;
@@ -300,8 +300,8 @@ body, html {
   100% {transform: rotate(-97deg);}
 }
 .animate-signR {
-	display: inline-block;
-	transform-origin: right center;
+   display: inline-block;
+   transform-origin: right center;
    -webkit-animation: signAnimationR 3s infinite;
    -moz-animation: signAnimationR 3s infinite;
    -o-animation: signAnimationR 3s infinite;
